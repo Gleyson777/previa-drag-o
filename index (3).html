@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dragão Escola de Desenho | Santa Maria</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#FAF7FF;--card:#fff;--ink:#241040;--mut:#5E5078;--line:#E3D8F3;--pur:#4B1F8C;--pur2:#2A0F55;--org:#F5A01A;--blu:#33B0F0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150826;--card:#21103B;--ink:#F6F0FF;--mut:#B9A8D8;--line:#3A2562}}
+:root[data-theme="dark"]{--bg:#150826;--card:#21103B;--ink:#F6F0FF;--mut:#B9A8D8;--line:#3A2562}
+html{scroll-padding-top:70px;scroll-behavior:smooth}*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Nunito,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Baloo 2",Nunito,sans-serif;margin:0;line-height:1.05;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:10;background:rgba(42,15,85,.88);backdrop-filter:blur(12px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;color:#fff}
+.lg{display:flex;align-items:center;gap:10px;font:800 20px "Baloo 2",sans-serif}.lg img{width:42px;height:42px;border-radius:50%}
+nav{display:flex;gap:24px;font-weight:600;font-size:15px}nav a:hover{color:var(--org)}
+.btn{display:inline-block;background:var(--org);color:#2A0F55;font:800 17px "Baloo 2",sans-serif;padding:12px 26px;border-radius:14px;border:3px solid #2A0F55;box-shadow:5px 5px 0 #2A0F55;transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 #2A0F55}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blu);outline-offset:3px}
+.hero{position:relative;background:var(--pur2);color:#fff;padding:130px 0 90px;overflow:hidden;
+background-image:radial-gradient(rgba(255,255,255,.09) 1.6px,transparent 1.8px),radial-gradient(90% 80% at 85% 10%,#6A2FC0,transparent 60%);background-size:16px 16px,auto}
+.hero:after{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 82% 40%,rgba(245,160,26,.1) 0 2deg,transparent 2deg 9deg);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(42px,7vw,86px);font-weight:800;animation:in .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes in{from{opacity:0;transform:translateY(40px)}}
+.hero p{max-width:44ch;color:#E3D5FA;margin:20px 0 30px;font-size:19px}
+.hero .btn{box-shadow:5px 5px 0 #000;border-color:#000}
+.emb{position:relative;width:min(380px,78vw);aspect-ratio:1;margin:auto}
+.emb img{position:absolute;inset:6%;width:88%;border-radius:50%;border:6px solid var(--org);box-shadow:12px 12px 0 rgba(0,0,0,.4)}
+.emb:before{content:"";position:absolute;inset:0;border:3px dashed var(--blu);border-radius:50%;animation:sp 40s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.tag{display:inline-block;background:var(--blu);color:#06243A;font:800 15px "Baloo 2";padding:2px 14px;border-radius:99px;margin-bottom:16px}
+section{padding:96px 0}h2{font-size:clamp(32px,4.6vw,56px);font-weight:800;margin-bottom:14px}
+.lead{color:var(--mut);max-width:58ch}
+.alt{background:var(--card)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.pts{display:grid;gap:14px;margin-top:6px}
+.pts div{border-left:6px solid var(--org);background:var(--bg);padding:14px 18px;border-radius:0 14px 14px 0}
+.pts b{font:700 19px "Baloo 2"}.pts span{display:block;color:var(--mut);font-size:15px;line-height:1.5}
+.first{display:flex;align-items:center;gap:20px;background:var(--pur);color:#fff;border-radius:22px;padding:26px;margin-top:24px}
+.first big{font:800 64px/1 "Baloo 2";color:var(--org)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:20px;padding:26px;box-shadow:7px 7px 0 var(--pur)}
+.alt .card{background:var(--bg)}
+.card h3{font-size:28px}.card .age{display:inline-block;background:var(--org);color:#2A0F55;font:800 15px "Baloo 2";padding:0 12px;border-radius:99px;margin:6px 0 10px}
+.card p{margin:0;color:var(--mut);font-size:15.5px;line-height:1.55}
+.fmt{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.fmt span{border:2px solid var(--pur);border-radius:99px;padding:5px 16px;font-weight:700;font-size:15px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px;margin-top:34px}
+.ph{position:relative;border:3px solid var(--ink);border-radius:8px;overflow:hidden;display:flex;align-items:flex-end;padding:10px;color:#fff;font:700 14px "Baloo 2";
+background:radial-gradient(rgba(255,255,255,.18) 1.5px,transparent 1.7px) 0 0/10px 10px,linear-gradient(135deg,var(--pur),#7A3BD0)}
+.ph:nth-child(3n){background-color:#c97a0a;background-image:radial-gradient(rgba(0,0,0,.15) 1.5px,transparent 1.7px),linear-gradient(135deg,var(--org),#FFC25A);color:#2A0F55}
+.ph:nth-child(4n+2){background-image:radial-gradient(rgba(255,255,255,.2) 1.5px,transparent 1.7px),linear-gradient(135deg,#1a86c0,var(--blu))}
+.g1{grid-column:span 2;grid-row:span 2}.g2{grid-row:span 2}.g3{grid-column:span 2}
+.evo{display:flex;align-items:center;gap:16px;margin-top:40px}.evo .ph{flex:1;height:200px}.evo i{font:800 34px "Baloo 2";color:var(--org)}
+.note{font-size:14px;color:var(--mut);margin-top:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;counter-reset:s}
+.step{position:relative;padding:0 20px 0 0}.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--org);color:#2A0F55;font:800 24px "Baloo 2";border:3px solid #2A0F55;position:relative;z-index:1}
+.step:after{content:"";position:absolute;top:24px;left:52px;right:0;border-top:3px dashed var(--pur)}.step:last-child:after{display:none}
+.step h3{font-size:24px;margin:14px 0 4px}.step p{margin:0;color:var(--mut);font-size:15px;line-height:1.5}
+.form{background:var(--pur2);color:#fff;border-radius:26px;padding:44px;display:grid;grid-template-columns:1fr 1.1fr;gap:44px;border:4px solid #000;box-shadow:10px 10px 0 var(--org)}
+.form .lead{color:#D9C9F2}
+form{display:grid;gap:14px}label{font-weight:800;font-size:14px;display:grid;gap:5px}
+input,select{font:600 16px Nunito;padding:12px 14px;border-radius:12px;border:2px solid #fff;background:#fff;color:#241040;width:100%}
+.btn.full{width:100%;font-size:19px}
+.fin{background:var(--org);color:#2A0F55;text-align:center;padding:80px 0}.fin h2{margin-bottom:22px}
+.fin .btn{background:#2A0F55;color:#fff;border-color:#000;box-shadow:5px 5px 0 #000}
+footer{background:#14072A;color:#B9A8D8;text-align:center;padding:26px;font-size:14px}
+@media(max-width:860px){nav{display:none}.hero .wrap,.two,.form{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr;gap:26px}.step:after{display:none}.form{padding:28px}.evo{flex-direction:column}.evo .ph{width:100%}section{padding:70px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header><div class="wrap"><a class="lg" href="#inicio"><img src="data:image/webp;base64,UklGRq4OAABXRUJQVlA4IKIOAABwQACdASqAAIAAPlEijkQjoiGUy858OAUEtABiwf3iRkx11+9f2D9acjHWXlIc8fM780/9L6rPMM/XXzyfWz+2XqW/bf9o/eX9QnoOfzf/O9cd6LXmv/+T2d/3O9MbRWZC+kXh35n/a3uh50vieiU9o/7H+5+17tf4CP4r/Mv8vwsoBPrJ/yfT2muDSepB6y9Gn/nm8/9RJplPhHHT/t3OtEx2qevQ5PsKde1ubx5/g9So0ythByZxl9KZR58Q6sSCQ6QSmWcZ6ur9llAA79b8NZ989fkYsY4v0bHf99CokqpmnpZzrqZTrmAJ+1zcfqI9aENG7+MbVXWk/Nh2ixil+rWeo6xYsJDQbaPYTfIK/FaRXtWceFByOLhE7oc4tTU5NUWy4N7pS0kTft+kVDFUibt3eYrBQlll/UoDITAkYxDPuOVluQu9uOABQ3BfF3hYX0+Dkdu82sq69RTAPolYzC6b39+sVeRevKzIVN4Q8PjPzbf9kIbeL3vLYcJhj+5KWJaf2/kvPOabwyv4/Vn2T+f4HcxI0Uu5ZYivaAK80j9L+PNwmBfLe4eo0TqjdPE5RLDbK1VUU0htzly+xAu5nzhA1coYv9QqfN2/ux9WMI+2xocAx15N0v5uqfUoZabopOr0h+0DQthHTgR84K5p+hR039PMDx/z3ApZE/5J/C86VYKsTMVp4T+oAAD+/dgKkgF3977YxJjeuwDjs6QIgVt5ByxyE+VWWS/whdDLFNyT2hL8LBLKhC2YTpxnOx5W+ZlQwK3/Oitap8TQdER/bFhPEsoTBNGixdPY5tYH81XSNxVA6V4uxjq3jj0z5FXaViVNhMrtN3Qm9ixUee5InfgFJOdupdv7sr8tsR15Vv/Rjz056Jt2qbx2xa8lPEzOSHuQm/ZEGEi52oAy271DPArCI1vPgKUncgtRRCBbkV5YCovCsna91aAjI7KZUI3sylb+t/3jpYbtL+da7xmhqf+cf3k2ef+agHZMb0C+gPx307EkL0Pus3x6HKkAUmVYpewlNKEw1fDkHayJKi+MW4jb+uVRcru94DUirLcHpWak+ovIhkxOW7+mORfX/vJh6qIQtfj0IUaCeW06431G4VynHDgL8W3KP6jfIr2pKfpENHn4Grc/p/z8Y4lmns4anJsWroW+TtbpUJzVyTuiGyzIMjg0Wu5It5hhGxirYxMUM9IUwhxZZekqKE6MPKyyqHEV6rhV4JRkXua8QXVLvMjzuxUw6ci+BbZAMsT2DN6zhNPRgLcvoSSV6urLoA3VPxQUm7zudpp0/4GXF4UWgKP24Z4eh7E1Zfu4MwNClp8wvLGTVGM/R+0sPANrpJfaP5k17fVUzpFbvfEzLZzqqoUfYU+CDp0LGSQBKt4JOj9mBaKLBIxupJuIRd+1I5N1GMIxYS9eU4OH1aVRt+ry2ZrBfze6VdoPSuWfB2NFLocVG3NN27XTA4zGnu6xJ0lcT71uPGDLF6VZiXr78SetOMLUtWhcavuVa5nEuo1C+e0jnZybvkDdkkdA2owwJnDkv0zIhiDeNtpddWceDqHr4vhm+4l2DAlWy2iOMegrIXy/MWIllRP6JTpIndMKM+iM7CV0HSI7e9siqn2Chuq6/gagFRFUG5IjGRSdSzpUy1/ey0NccHjDwWPDvSYhsMXls0iEMmsCBBEYtOVVNP2f2Ey5opBwGeDEd4Fi9I73MBEgeUMSJJQXyGvEYoEj8ALMFSwaKmOaLa+J+lei0LfOKzOIHHxAfbX/Y48pp+a6tKiLPe67w3sP/OHXlmGW84MbySnE+QqnTkRTIQkLqMJuSPWEOuWZnszMZHeX5vv/QPxDnO6YE7kRs3RYV2MQJXPPeKUFJTf8/dPhq8tEj2Csuyws3B5Fpf3wZHAMbUyMH+Mvp52T7MwOQa3ilqAg91Pbl9fLlvdWJHftc4nxTIVMFP2ukMBZyVt1OkeQ3gPsxz2IFy27VNlnWlBSx5jVxJti7bLpOK6J9KpI0vK1Hxff26iswN1OHLpXfmcqay7rouSnMUcmiT9p99lYTODPpkrrtt8A45BihLmFjV+jmf8F78qsfp1qny1k/1CadlPK0SOvg/CpB8yL49ftZnWeOSl/JN5WfBJr0UJVe/i70uHVukQmesvzsPTmmzERZAL+yuYfQgplvoTnd3kTkvpJFgrm+wLguWfgsOI+Q1KgVv33d17MBT+AhQyFm/VNKwufyD+PUX9CFtfFfyQub5zv//CiJiCdHnddflt8x/l4ns+p/gVAAIYChGsbyo/RMWy+O/GajiEfVC7nk0YeAMs8QYXcp+T3wAijXdrRTfyWsTuQAKp982TWRICoF7r5yAYOPxkxz3a1zlrnY+bBdOs92vFxhv7d9/pFqu+81rx/TZeWCG48O1HccqHv9QAnFoQw4ljrhM2UOFxYk/S7x3yMinXsck/dDlqn/eP9b968RI/5fPvf9IhOf8bjnd1T/t1U6hrFm+p/nfLrMtMxwKwsB1V3Eam6n+/hAxvlwOAwg43IbNJSazFn4o/omATpMQ9aF9KrqXwAJaGtZqXe1WBdOUpOxdKF58oXc1bvWsLWGepnbkpaETn0TmPxUZ8/Hb8imwF20+tdszs/L/VDhZ+3Y7AYhU/c+vx7t3L+exGs/9Y9kufDO5q1XVOMyEgQFFkpqIznTqkhnUMgsSUzNN6Y04UAZdD8Uq0LspVad6re7+3Y8HOGCfFTu4S24Be80JoOO70C78vHvjFrpk0Q9xtY25YXU3OugAjWeehPiqueQmeNV6h60QQZgyzXVbF+NcJYatz9ZiDImZZbXoPindt7mplY4V5e6BF/Eof/VJ88RaGME8AtSh4z0LuSJPw+1fnlt+EvXo9DyCD3er3vy0uesltEkYsk6/1QNSz0dKBC6yEYBm243ZNvaGj5mwPbSelAWGQFFKWUmGFK+Sw7KwP+uXis3BzzZVPHFAMGdkrf5UX/2mGbO+wFFHPzfPS+icG9D4t58T0ZQrRhXMLSBTSj0kzJ0F1IBpsIviuvV8ODJ1L6enXKti7jzXm4Ghwf/hulQJOc3gQxncE4WE8jCFFSMS2WZA1Vcm0wqqUsz3KgQvGmPmixn5ypHvCJiYvb7tSviqMMTpVFiwx72/b86KIniu4mXTxjVH+UKSEXelMMWv/nBhCbBmb7Yon5SFiBNbjx55Dxwpbnmg45yHrj11PSrR1fPb9rxqJGE3BSADn0oqZOeFPzavKTSKIs4GwuuwWDT0pWiE6ve9rDTSgi4QATfGsd+bJ9NUOxWE9QIIkL9WJUsRUKgHo7CeGM0FmNEDLpYzq3MlUTkqZeV5IlJY+CK8WNkbseefOSnjGhi7ft34bMvPDNIE3KcBxWjvMoNOxPfCR9gmddrOne4I94DhxgemFrxc/CdFuSkt/lwOy+ZqnhG+wGh05ot9wZAZY8mmH/CRSdcScyVw5ODqkztkdnbQOFKPNmCTeXGcbMkfWGm8VOoqPRjyK1ED3SZIfA91P6Sei/iqOMHPqjV1JhcwrWPS5pn1RHqTjVDqiuaxGOanl5+jEMqIEe7GxgqpyF6t2xd/oNlk8cxLUWdPbzV3T5jVF43T85935s870tUagc1M8Kgu6dAlIHrUCsh/WCjBCbIwApy+J9H4Zti2A8DFXPis4vKa5hVAEYPyJzfWeka3O1pCJzsKvgdpakawA+fYAbpoaTUQoZlHyyPMIF791owHss38mLMlEGX30Gbg959LFH0EFz6wkxJt8fugXPoNC4wVaqVhYnI0yNVSmoBuKVnf9dKbH/IzngLodLI+qLcLF2fBwy0i3vefZF1CgsxKwTpdD4u4vszYx4TB8h5wnHwvi4ELAX5AXPgNazC//o7YMHV7JzbSVlueyarO2LwqNSpgtasWSZdi8kcaKyXUGHdJV7fA5QbcPV1I+j5K10wrtr+ZCX9X8Z5DJ9N9agVUdGvGiSGkzJMiej4T223k4kFSqGjFDLBDdMNg6Px4/QPirXcS5zgfdiPls0+vXnwN+KiJn6X4j4ykKBrh1qJHuB/67IS8LuGi308i6ozvoaX0PZCVF3UQT57c73VIfQAVJSaupJx6M/WaYUVZvlKJtWK0xhK82ulspuxOXHHxBAbHZas/r0YNnXIJQfG2ztBGtXn+0nidrnsgzdGJ661nmwU8Wf1I6X49rvoEfgCiHKwUhwmzAemnbeNeB8S9GLsxveD3JfaEL00zAPVLAZuHizzITRuC20Sb0pnzYWoo769gQpKcspP8VQOFz6ufiG1HFVqz2PY8nmDoIC/zv8uuEfvqeohKnlqM1bpegOTy69YKDzdOOVwvEyayx+75r+v2YKsA3dUPn1QnSwlKtgCK9tVp23tPtfqN0Er/CzBbqM3KRB5nsXGvdepjYRGRUKFedteZ6udP0/SY6KXaKGU+ib5WSgOqE0Qu9Qa9io7HOLubkTWq5gX5U/4W4SlLm74Ou1tbYT4XDimsFTdbUxkAz0GKdXo9BXAcVzxyUT6hQKacWaXNfQ6CHPXrMxZujO8fDU7X2MLQ3vfIrvydoa45QHwS4892U2n7RK/0xfYlr78va2Z9srEh2jICNtwJJALk+xOlExShVC1i0uo7ru9jAQYR8FiInJ4LTJWHYCjvAA3T1MuIAhPdX7x0nlXfGRORUxeQGy3gGAkPBUNAYdkAM5yswq0AKrACQMBs3e098y5rmRyoN2HY/It88ly+DA07BPo6Bu6Pm8PbWYEHvYOShIHuYkdSi+csNmhMHSl2tOjBBA/V0x4VYGNNCuivTNp2odK/IbrE2KuSMP7OGcsrbeeJ/p4meYNTLfcdj2Bn2aFqEAj8sBRrqwY3BlqACERM3UsAa45Fw5IHcAFXrtz40m0tK4nBsK9liSgTCOasAGvYM0QjRRMJUyxLTMo9jlcuqQkEJd0Z7eiv2rhDNMrS1zbJ6KthQC8woEQ4B1+dwGm/KFa2voe+SYYf7a+EfRYXWSODjpHVKmYGPX20mBuamjQGIAAA==" alt="Logo Dragão">Dragão</a>
+<nav><a href="#sobre">Sobre</a><a href="#aulas">Aulas</a><a href="#galeria">Galeria</a><a href="#como">Como funciona</a></nav>
+<a class="btn" style="padding:6px 18px;font-size:15px;box-shadow:3px 3px 0 #000;border-color:#000" href="#contato">Quero conhecer</a></div></header>
+
+<div class="hero" id="inicio"><div class="wrap"><div>
+<span class="tag">Agora em Santa Maria/RS</span>
+<h1>Seu traço, do zero ao avançado.</h1>
+<p>Escola de desenho no estilo mangá para artistas a partir de 5 anos. Matrículas abertas.</p>
+<a class="btn" href="#contato">Quero conhecer as aulas</a></div>
+<div class="emb"><img src="data:image/webp;base64,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" alt="Dragão Escola de Desenho"></div></div></div>
+
+<section id="sobre"><div class="wrap two"><div>
+<h2>A primeira Dragão do Rio Grande do Sul</h2>
+<p class="lead">A Dragão ensina desenho no estilo mangá para quem está começando e para quem quer evoluir. Agora a escola chegou a Santa Maria, e você aprende perto de casa.</p>
+<div class="first"><big>1ª</big><span>unidade da Dragão no RS, aberta em Santa Maria.</span></div></div>
+<div class="pts">
+<div><b>História</b><span>[Espaço para a história da escola e dos professores]</span></div>
+<div><b>Metodologia</b><span>Do traço básico ao personagem original, passo a passo e no ritmo de cada aluno.</span></div>
+<div><b>Ambiente</b><span>Um espaço criativo, colorido e feito para quem ama desenhar.</span></div>
+<div><b>Professores</b><span>Equipe que desenha de verdade e acompanha cada aluno de perto.</span></div></div></div></section>
+
+<section class="alt" id="aulas"><div class="wrap">
+<h2>Aulas para cada fase</h2><p class="lead">Do primeiro rabisco ao personagem original. Descubra qual turma combina com você.</p>
+<div class="cards">
+<div class="card"><h3>Pequenos artistas</h3><span class="age">5 a 9 anos</span><p>Formas, personagens e diversão. Primeiro contato com o desenho no estilo mangá.</p></div>
+<div class="card"><h3>Jovens artistas</h3><span class="age">10 a 15 anos</span><p>Anatomia, expressões, cenários e criação do próprio personagem.</p></div>
+<div class="card"><h3>Adultos</h3><span class="age">16+ anos</span><p>Fundamentos e técnicas avançadas, para hobby ou para seguir carreira.</p></div></div>
+<div class="fmt"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span><span>Aulas em grupo</span></div>
+<p class="note">Exemplo de organização. Turmas, horários e valores serão ajustados com a equipe.</p></div></section>
+
+<section id="galeria"><div class="wrap">
+<h2>Feito por quem aprende aqui</h2><p class="lead">Trabalhos dos alunos, bastidores das aulas e a evolução do traço.</p>
+<div class="gal">
+<div class="ph g1">Trabalho de aluno</div><div class="ph">Aula</div><div class="ph g2">Personagem original</div>
+<div class="ph">Rascunho</div><div class="ph g3">Foto da turma</div><div class="ph">Arte final</div><div class="ph">Cenário</div></div>
+<div class="evo"><div class="ph">Mês 1</div><i>→</i><div class="ph">Mês 6</div></div>
+<p class="note">Espaços de exemplo. Aqui entram as fotos e artes reais do Instagram da escola.</p></div></section>
+
+<section class="alt" id="como"><div class="wrap">
+<h2>Como funciona</h2>
+<div class="steps">
+<div class="step"><h3>Conheça a escola</h3><p>Veja o espaço e as aulas.</p></div>
+<div class="step"><h3>Escolha o formato</h3><p>Turma e nível ideais.</p></div>
+<div class="step"><h3>Fale com a equipe</h3><p>Tire dúvidas pelo WhatsApp.</p></div>
+<div class="step"><h3>Faça a matrícula</h3><p>E comece a desenhar.</p></div></div></div></section>
+
+<section id="contato"><div class="wrap"><div class="form"><div>
+<h2>Qual aula combina com você?</h2>
+<p class="lead">Responda em 30 segundos. Sua mensagem chega pronta no WhatsApp, e nossa equipe já sabe quem está falando.</p></div>
+<form id="f">
+<label>Nome<input id="n" required autocomplete="name" placeholder="Seu nome"></label>
+<label>Idade do aluno<input id="i" type="number" min="3" max="99" required placeholder="Ex.: 10"></label>
+<label>Já desenha?<select id="d"><option>Nunca desenhei</option><option>Desenho um pouco</option><option>Desenho bastante</option></select></label>
+<label>Qual seu interesse?<select id="t"><option>Aprender mangá</option><option>Criar meus personagens</option><option>Desenhar como hobby</option><option>Seguir carreira</option></select></label>
+<button class="btn full" type="submit">Quero conhecer as aulas</button></form></div></div></section>
+
+<div class="fin"><div class="wrap"><h2>Pronto para começar a desenhar?</h2>
+<a class="btn" href="https://wa.me/5555991266287?text=Ol%C3%A1!%20Quero%20conhecer%20as%20aulas%20da%20Drag%C3%A3o." target="_blank" rel="noopener">Falar com nossa equipe</a></div></div>
+<footer>Dragão Escola de Desenho | Santa Maria/RS · @dragaosantamaria · Página de prévia</footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var v=function(x){return document.getElementById(x).value};
+var m='Olá! Quero conhecer as aulas da Dragão.\nNome: '+v('n')+'\nIdade do aluno: '+v('i')+'\nJá desenha: '+v('d')+'\nInteresse: '+v('t');
+window.open('https://wa.me/5555991266287?text='+encodeURIComponent(m),'_blank','noopener')});
+</script></body></html>
